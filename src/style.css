@@ -921,6 +921,10 @@ video {
     height: 800px;
   }
 
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
   .lg\:p-0 {
     padding: 0px;
   }
