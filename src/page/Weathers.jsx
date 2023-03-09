@@ -34,18 +34,18 @@ function Weathers() {
 
   return (
     <div className='bg-[#29223c] h-screen grid place-content-center'>
-      <div className="bg-[#0000004d] p-6 lg:p-10 rounded-[50px]">
-        <div className="flex justify-center mt-1 lg:mt-10 ">
+      <div className="bg-[#0000004d] p-4 lg:p-10 rounded-[50px]">
+        <div className="flex justify-center my-10 ">
           <div className='relative flex items-center'>
             <input
               type="text"
-              className='px-16 py-4 rounded-full outline-none border focus:border-blue-600'
+              className='px-9 py-4 lg:px-16 lg:py-4 rounded-full outline-none border focus:border-blue-600'
               placeholder='Şehir Giriniz...'
               onChange={e => setCity(e.target.value)}
               value={city}
               onKeyPress={getWeather}
             />
-            <span className='absolute right-5 top-5'><BsSearch size={20} /></span>
+            <span className='hidden lg:absolute right-5 top-5'><BsSearch size={20} /></span>
           </div>
         </div>
         <div className="mt-0 lg:mt-10 text-white px-5">
