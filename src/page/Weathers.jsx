@@ -34,7 +34,9 @@ function Weathers() {
 
   return (
     <div className='bg-[#29223c] h-screen grid place-content-center'>
-      <div className="bg-[#0000004d] p-4 lg:p-10 rounded-[50px]">
+
+      {/* <div className="bg-[#0000004d] p-4 lg:p-10 rounded-[50px]"> */}
+      <div className={(typeof weatherData.main != 'undefined') ? ((weatherData.main.temp > 16) ? 'tik-warm' : 'tik-cold'):'tik'}>
         <div className="flex justify-center my-10 ">
           <div className='relative flex items-center'>
             <input
@@ -48,7 +50,7 @@ function Weathers() {
             <span className='hidden lg:absolute right-5 top-5'><BsSearch size={20} /></span>
           </div>
         </div>
-        <div className="mt-0 lg:mt-10 text-white px-5">
+        <div className="mt-0 lg:mt-10 px-5">
           {typeof weatherData.main == 'undefined' ? (
             <div className='text-center p-7 lg:p-0 lg:mt-10 text-sm lg:text-xl'>
               <p>Geçerli Bir Şehir veya Bir Ülke Arayın</p>
@@ -67,24 +69,23 @@ function Weathers() {
                 <p className='text-sm uppercase'>{weatherData.weather[0].description}</p>
                 <p className='text-6xl text-center mt-5'>{Math.round(weatherData.main.temp)}<span className='text-yellow-500'>°</span></p>
                 <div className="flex gap-10 pt-5">
-                  <div className='flex flex-col items-center'>
+                  <div className='flex flex-col items-center text-white'>
                     <img src={Wind} alt="" width={60} />
                     <p className='lg:text-[25px] mt-2'>{Math.round(weatherData.wind.speed)}<span className='text-sm'>km/sa</span></p>
                   </div>
-                  <div className='flex flex-col items-center'>
+                  <div className='flex flex-col items-center text-white'>
                     <img src={Pressure} alt="" width={60} />
                     <p className='lg:text-[25px] mt-2'>{weatherData.main.pressure}<span className='text-sm'>hPa</span></p>
                   </div>
-                  <div className='flex flex-col items-center'>
+                  <div className='flex flex-col items-center text-white'>
                     <img src={Humidity} alt="" width={60} />
                     <p className='lg:text-[25px] mt-2'>%{weatherData.main.humidity}</p>
                   </div>
                 </div>
               </div>
-
-              <div className="flex justify-center items-center ">
+              {/* <div className="flex justify-center items-center ">
                 <Link onClick={() => navigate(-1)} className="px-10 py-2 bg-blue-600 rounded-2xl">Geri</Link>
-              </div>
+              </div> */}
             </div>
           )}
         </div>

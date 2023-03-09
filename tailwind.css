@@ -8,3 +8,36 @@
         @apply font-montserrat
     }
 }
+.tik{
+    background-color: #0000004d;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 50px;
+    color: white;
+}
+.tik input{
+    color: black;
+}
+.tik-cold{
+    background-image: url('https://i.pinimg.com/originals/00/a6/b0/00a6b0393ec4a00b43c06994f732188d.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    color: black;
+}
+.tik-cold input{
+    color:black
+}
+.tik-warm{
+    background-image: url('https://1.bp.blogspot.com/-JtxvJnw_Bbk/XfD5iH5l0FI/AAAAAAAAACs/eKc6SPvB578zkhg6jvvkLlQG12Aw0Z7sgCLcBGAsYHQ/w360-h640/valley-minimalist-wallpaper-hd.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+}
+.tik-warm input{
+    color: black;
+}
