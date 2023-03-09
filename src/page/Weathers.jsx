@@ -60,27 +60,24 @@ function Weathers() {
                   {moment().locale('tr').format('Do MMMM YYYY | h:mm:ss')}
                 </span>
               </div>
-              <h2 className='flex text-sm lg:text-3xl'>
-                {weatherData.name} İçin Günün Özeti
-              </h2>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center p-5">
                 <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`} width={80} />
                 <p className='text-3xl'>{weatherData.name}<span className='text-sm'>,{weatherData.sys.country}</span></p>
                 <p className='text-sm uppercase'>kordinatlar: {weatherData.coord.lon} | {weatherData.coord.lat} </p>
                 <p className='text-sm uppercase'>{weatherData.weather[0].description}</p>
                 <p className='text-6xl text-center mt-5'>{Math.round(weatherData.main.temp)}<span className='text-yellow-500'>°</span></p>
                 <div className="flex gap-10 pt-5">
-                  <div className='flex flex-col'>
+                  <div className='flex flex-col items-center'>
                     <img src={Wind} alt="" width={60} />
-                    <p className='text-[25px] mt-2'>{Math.round(weatherData.wind.speed)}<span className='text-sm'>km/sa</span></p>
+                    <p className='lg:text-[25px] mt-2'>{Math.round(weatherData.wind.speed)}<span className='text-sm'>km/sa</span></p>
                   </div>
-                  <div>
+                  <div className='flex flex-col items-center'>
                     <img src={Pressure} alt="" width={60} />
-                    <p className='text-[25px] mt-2'>{weatherData.main.pressure}<span className='text-sm'>hPa</span></p>
+                    <p className='lg:text-[25px] mt-2'>{weatherData.main.pressure}<span className='text-sm'>hPa</span></p>
                   </div>
-                  <div>
+                  <div className='flex flex-col items-center'>
                     <img src={Humidity} alt="" width={60} />
-                    <p className='text-[25px] mt-2'>%{weatherData.main.humidity}</p>
+                    <p className='lg:text-[25px] mt-2'>%{weatherData.main.humidity}</p>
                   </div>
                 </div>
               </div>
