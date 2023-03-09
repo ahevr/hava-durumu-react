@@ -8,6 +8,7 @@
         @apply font-montserrat
     }
 }
+
 .tik{
     background-color: #0000004d;
     background-position: center;
@@ -18,7 +19,7 @@
     color: white;
 }
 .tik input{
-    color: black;
+    color: white;
 }
 .tik-cold{
     background-image: url('https://i.pinimg.com/originals/00/a6/b0/00a6b0393ec4a00b43c06994f732188d.jpg');
