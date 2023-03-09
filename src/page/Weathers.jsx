@@ -41,8 +41,8 @@ function Weathers() {
           <div className='relative flex items-center'>
             <input
               type="text"
-              className='px-9 py-4 lg:px-16 lg:py-4 rounded-full outline-none border focus:border-blue-600'
-              placeholder='Şehir Giriniz...'
+              className='px-9 py-4 lg:px-16 lg:py-4 rounded-full outline-none border focus:border-blue-600 bg-transparent'
+              placeholder='Ülke,Şehir,İl,İlçe...'
               onChange={e => setCity(e.target.value)}
               value={city}
               onKeyPress={getWeather}
