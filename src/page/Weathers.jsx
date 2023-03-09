@@ -57,7 +57,7 @@ function Weathers() {
             <div className="flex flex-col justify-center mt-5 space-y-3">
               <div className="flex flex-col">
                 <span className='p-1 text-xl'>
-                  {moment().locale('tr').format('Do MMMM YYYY | h:mm:ss')}
+                  {moment().locale('tr').format('D MMMM YYYY | H:mm:ss')}
                 </span>
               </div>
               <div className="flex flex-col items-center p-5">
