@@ -21,13 +21,13 @@
 .tik input{
     color: white;
 }
-.tik-cold{
+.tik-coldd{
     background-image: url('https://i.pinimg.com/originals/02/0f/8a/020f8a08746ca688e5e77aeefc40b6b8.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50px;
-    color: black;
+    color: white;
 }
 .tik-cold input{
     color:black

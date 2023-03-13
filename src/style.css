@@ -678,11 +678,6 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
 .bg-transparent {
   background-color: transparent;
 }
@@ -703,11 +698,6 @@ video {
   padding: 1.75rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -721,11 +711,6 @@ video {
 .px-9 {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .py-4 {
@@ -807,13 +792,13 @@ video {
   color: white;
 }
 
-.tik-cold{
-  background-image: url('https://i.pinimg.com/originals/00/a6/b0/00a6b0393ec4a00b43c06994f732188d.jpg');
+.tik-coldd{
+  background-image: url('https://i.pinimg.com/originals/02/0f/8a/020f8a08746ca688e5e77aeefc40b6b8.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50px;
-  color: black;
+  color: white;
 }
 
 .tik-cold input{
