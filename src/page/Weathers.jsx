@@ -29,14 +29,11 @@ function Weathers() {
         })
     }
   }
-
-  const navigate = useNavigate();
-
   return (
     <div className='bg-[#29223c] h-screen grid place-content-center'>
 
       {/* <div className="bg-[#0000004d] p-4 lg:p-10 rounded-[50px]"> */}
-      <div className={(typeof weatherData.main != 'undefined') ? ((weatherData.main.temp > 16) ? 'tik-warm' : 'tik-cold'):'tik'}>
+      <div className={(typeof weatherData.main != 'undefined') ? ((weatherData.main.temp > 12) ? 'tik-warm' : 'tik-cold'):'tik'}>
         <div className="flex justify-center my-10 ">
           <div className='relative flex items-center'>
             <input
@@ -83,9 +80,6 @@ function Weathers() {
                   </div>
                 </div>
               </div>
-              {/* <div className="flex justify-center items-center ">
-                <Link onClick={() => navigate(-1)} className="px-10 py-2 bg-blue-600 rounded-2xl">Geri</Link>
-              </div> */}
             </div>
           )}
         </div>
