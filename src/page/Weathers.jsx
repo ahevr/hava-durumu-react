@@ -53,7 +53,7 @@ function Weathers() {
         <div className="mt-0 lg:mt-10 px-5">
           {typeof weatherData.main == 'undefined' ? (
             <div className='text-center p-7 lg:p-0 lg:mt-10 text-sm lg:text-xl'>
-              <p>Geçerli Bir Şehir veya Bir Ülke Arayın</p>
+              <p>Geçerli Bir Şehir veya Bir Ülke Arayınn</p>
             </div>
           ) : (
             <div className="flex flex-col justify-center mt-5 space-y-3">
