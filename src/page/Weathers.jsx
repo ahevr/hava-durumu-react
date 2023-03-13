@@ -33,7 +33,7 @@ function Weathers() {
     <div className='bg-[#29223c] h-screen grid place-content-center'>
 
       {/* <div className="bg-[#0000004d] p-4 lg:p-10 rounded-[50px]"> */}
-      <div className={(typeof weatherData.main != 'undefined') ? ((weatherData.main.temp > 12) ? 'tik-warm' : 'tik-cold'):'tik'}>
+      <div className={(typeof weatherData.main != 'undefined') ? ((weatherData.main.temp > 13) ? 'tik-warm' : 'tik-cold'):'tik'}>
         <div className="flex justify-center my-10 ">
           <div className='relative flex items-center'>
             <input
